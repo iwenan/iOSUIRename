@@ -35,6 +35,7 @@ def rename_files(files_path):
 			    fname, ext = os.path.splitext(temp)
 			    # 去除文件名中多余的空格
 			    fname = fname.replace(' ','')
+			    fname = fname.lower()
 			    # base_name = os.path.basename(fname)
 			    new_n = pre_str + '_' + fname + ext
 			    print('%s =====> %s' % (temp ,new_n))
